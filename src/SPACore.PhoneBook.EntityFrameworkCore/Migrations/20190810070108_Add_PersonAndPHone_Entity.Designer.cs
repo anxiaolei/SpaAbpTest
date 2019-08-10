@@ -17,9 +17,10 @@ using System;
 namespace SPACore.PhoneBook.Migrations
 {
     [DbContext(typeof(PhoneBookDbContext))]
-    partial class PhoneBookDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190810070108_Add_PersonAndPHone_Entity")]
+    partial class Add_PersonAndPHone_Entity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
